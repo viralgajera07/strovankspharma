@@ -6,7 +6,6 @@ import ProductCatalog from './components/ProductCatalog';
 import QualityPolicy from './components/QualityPolicy';
 import ContractManufacturing from './components/ContractManufacturing';
 import Certificates from './components/Certificates';
-import BatchVerifier from './components/BatchVerifier';
 import ContactSection from './components/ContactSection';
 import DoctorPortal from './components/DoctorPortal';
 import MoleculeModal from './components/MoleculeModal';
@@ -78,11 +77,6 @@ export default function App() {
         {/* 1. Hero Section */}
         <Hero
           onSearchSubmit={handleHeroSearch}
-          onOpenBatchVerifier={() => {
-            setActiveTab('verifier');
-            const el = document.getElementById('verifier');
-            if (el) el.scrollIntoView({ behavior: 'smooth' });
-          }}
           onOpenMoleculeModal={() => setShowMoleculeModal(true)}
         />
 
@@ -92,7 +86,6 @@ export default function App() {
         {/* 3. Product Catalog Section */}
         <ProductCatalog
           searchQuery={searchQuery}
-          onRequestSample={handleOpenSampleRequest}
         />
 
         {/* 4. Quality Policy & Testing Standards */}
@@ -104,10 +97,7 @@ export default function App() {
         {/* 6. Regulatory Accreditations & Badges */}
         <Certificates />
 
-        {/* 7. Batch Serialization & CoA Verifier */}
-        <BatchVerifier onShowToast={showToast} />
-
-        {/* 8. Contact & Business Inquiry Section */}
+        {/* 7. Contact & Business Inquiry Section */}
         <ContactSection onShowToast={showToast} />
 
       </main>

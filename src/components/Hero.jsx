@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Search, ShieldCheck, Play, ArrowRight, Activity, Sparkles, Award, Globe, Building, Briefcase, FileCheck } from 'lucide-react';
+import { Search, ShieldCheck, Play, ArrowRight, Activity, Sparkles, Award, Globe, Building, Briefcase, FileCheck, Phone } from 'lucide-react';
 
-export default function Hero({ onSearchSubmit, onOpenBatchVerifier, onOpenMoleculeModal }) {
+export default function Hero({ onSearchSubmit, onOpenMoleculeModal }) {
   const [query, setQuery] = useState('');
 
   const handleSearch = (e) => {
@@ -37,7 +37,7 @@ export default function Hero({ onSearchSubmit, onOpenBatchVerifier, onOpenMolecu
 
           {/* Subtitle */}
           <p className="text-base md:text-lg max-w-3xl mx-auto leading-relaxed mb-6" style={{ color: 'var(--text-muted)' }}>
-            Strovanks Pharma produces high-purity pharmaceutical tablets, injections, oral syrups, softgels, topicals, and nutraceuticals. Trusted by doctors, hospitals, and PCD franchise partners across 30+ nations.
+            Strovanks Pharma produces high-purity pharmaceutical tablets, injections, oral syrups, softgels, and topicals. Trusted by doctors, hospitals, and PCD franchise partners across 30+ nations.
           </p>
 
           {/* Hero Formulations Search Form */}
@@ -72,10 +72,10 @@ export default function Hero({ onSearchSubmit, onOpenBatchVerifier, onOpenMolecu
               PCD Franchise & Mfg Inquiry
             </a>
 
-            <button onClick={onOpenBatchVerifier} className="btn btn-outline rounded-xl px-6 py-3">
-              <ShieldCheck className="w-4 h-4 text-brand-teal" />
-              Verify Batch CoA
-            </button>
+            <a href="#contact" className="btn btn-outline rounded-xl px-6 py-3">
+              <Phone className="w-4 h-4 text-brand-teal" />
+              Contact Us
+            </a>
           </div>
 
         </div>

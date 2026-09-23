@@ -224,7 +224,7 @@ export default function ContractManufacturing({ onShowToast }) {
                   <option value="Tablets & Capsules">Tablets & Hard Gelatin Capsules</option>
                   <option value="Injectables & Critical Care">Liquid & Lyophilized Injectables</option>
                   <option value="Syrups & Suspensions">Paediatric Syrups & Dry Suspensions</option>
-                  <option value="Softgel & Nutraceuticals">Softgels, Proteins & Sachets</option>
+                  <option value="Softgel Capsules">Softgels & Oral Sachets</option>
                   <option value="Ointments & Dermatologicals">Topical Creams, Gels & Ointments</option>
                   <option value="Eye Ear Nasal Drops">Ophthalmic & ENT Drops</option>
                   <option value="Ayurvedic Range">Herbal & Ayurvedic Formulations</option>

@@ -51,7 +51,7 @@ export default function Navbar({ theme, toggleTheme, activeTab, setActiveTab, on
         { label: 'Pharmaceutical Tablets', targetId: 'products' },
         { label: 'Parenteral Injections', targetId: 'products' },
         { label: 'Oral Syrups & Liquids', targetId: 'products' },
-        { label: 'Nutraceuticals & Softgels', targetId: 'products' },
+        { label: 'Capsules & Softgels', targetId: 'products' },
       ]
     },
     {
@@ -75,7 +75,6 @@ export default function Navbar({ theme, toggleTheme, activeTab, setActiveTab, on
       ]
     },
     { id: 'certificates', label: 'CERTIFICATES', hasPlus: false },
-    { id: 'verifier', label: 'BATCH VERIFIER', hasPlus: false },
     { id: 'contact', label: 'CONTACT', hasPlus: false },
   ];
 
@@ -128,17 +127,21 @@ export default function Navbar({ theme, toggleTheme, activeTab, setActiveTab, on
           {/* Logo */}
           <a
             href="#"
-            className="flex items-center gap-3 group text-decoration-none"
+            className="flex items-center group text-decoration-none py-1"
             onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
           >
-            <div className="p-1.5 rounded-xl bg-white group-hover:scale-105 transition-transform flex items-center justify-center border-0">
-              <img
-                src="/logo.png"
-                alt="Strovanks Pharma"
-                className="brand-logo-img"
-                style={{ height: '38px', maxHeight: '38px', width: 'auto', objectFit: 'contain', display: 'block' }}
-              />
-            </div>
+            <img
+              src="/logo.png"
+              alt="Strovanks Pharma"
+              className="transition-transform group-hover:scale-[1.02]"
+              style={{
+                height: '56px',
+                maxHeight: '58px',
+                width: 'auto',
+                objectFit: 'contain',
+                display: 'block'
+              }}
+            />
           </a>
 
           {/* Main Desktop Navigation Items */}
@@ -244,6 +247,13 @@ export default function Navbar({ theme, toggleTheme, activeTab, setActiveTab, on
             borderColor: theme === 'dark' ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 102, 255, 0.12)'
           }}
         >
+          <div className="pb-3 mb-1 border-b border-slate-200/40">
+            <img
+              src="/logo.png"
+              alt="Strovanks Pharma"
+              style={{ height: '48px', width: 'auto', objectFit: 'contain', display: 'block' }}
+            />
+          </div>
           {navItems.map((item) => {
             const isActive = activeTab === item.id;
             return (

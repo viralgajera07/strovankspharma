@@ -113,7 +113,7 @@ export default function AboutCompany() {
                   Empowering Healthcare Through Quality & Trust
                 </h3>
                 <p className="leading-relaxed text-sm md:text-base text-slate-600">
-                  Strovanks Pharma operates at the forefront of modern pharmaceutical formulation development and contract manufacturing. Modeled after world-class standards, our ultra-modern manufacturing hubs produce high-purity oral solids, parenteral injections, liquid syrups, topical gels, and specialized nutraceutical formulations.
+                  Strovanks Pharma operates at the forefront of modern pharmaceutical formulation development and contract manufacturing. Modeled after world-class standards, our ultra-modern manufacturing hubs produce high-purity oral solids, parenteral injections, liquid syrups, and topical gels.
                 </p>
                 <div className="space-y-3 pt-2">
                   <div className="flex items-start gap-3">

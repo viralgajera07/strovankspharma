@@ -358,6 +358,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #0066ff;
 }
 
+.contact-input-wrapper.items-start {
+  align-items: flex-start !important;
+}
+
+.contact-input-wrapper.items-start .input-icon {
+  top: 0.875rem;
+}
+
 .preset-chip {
   display: inline-flex;
   align-items: center;
